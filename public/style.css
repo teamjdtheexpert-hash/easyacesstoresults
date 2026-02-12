@@ -1,0 +1,55 @@
+:root {
+  --bg: #05050a;
+  --fg: #eef3ff;
+  --muted: #b8c2d9;
+  --card: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.15);
+  --accent: #5eead4;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(circle at top, #121533 0%, var(--bg) 48%);
+  color: var(--fg);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  backdrop-filter: blur(6px);
+}
+
+.hero h1 { margin: .3rem 0 .5rem; }
+.eyebrow { letter-spacing: .15em; text-transform: uppercase; color: var(--accent); font-size: .8rem; }
+.muted { color: var(--muted); }
+.grid { margin-top: 1rem; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+button {
+  margin-top: .6rem;
+  background: var(--accent);
+  color: #002722;
+  border: 0;
+  border-radius: 10px;
+  padding: .55rem .9rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+pre {
+  white-space: pre-wrap;
+  margin-top: .8rem;
+  padding: .8rem;
+  border-radius: 12px;
+  background: rgba(0,0,0,.35);
+  color: #d0dcff;
+}

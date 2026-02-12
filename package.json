@@ -1,0 +1,11 @@
+{
+  "name": "easyacesstoresults",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Offline-runnable futuristic starter app",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check server.mjs"
+  }
+}
